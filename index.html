@@ -215,7 +215,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="https://3dmv2023.github.io/">3DMV @ CVPR 2023</a>
+        <a class="navbar-brand" href="https://abdullahamdi.com/3dmv2024/">3DMV @ CVPR 2024</a>
       </div>
 
       <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
@@ -421,7 +421,7 @@
   <div id="schedule" class="content-section-a">
     <div class="container">
       <div class="wow fadeInRightBig" data-animation-delay="200">
-        <h3 class="section-heading" style='text-align: justify;color:#164FC9'>Schedule (June 17th. 2024)</h3>
+        <h3 class="section-heading" style='text-align: justify;color:#164FC9'>Schedule (June 17th, 2024)</h3>
         <div id="controller">
           <div id='row fadeInRightBig'>
             <div class="title">
@@ -433,10 +433,10 @@
             <div class="wow">
               <table class="table" style="width:100%;">
                 <tr class="info">
-                  <td><strong>Time</strong></td>
-                  <td><strong>Session</strong></td>
-                  <td><strong>Speakers</strong></td>
-                  <td><strong>Recordings</strong></td>
+                  <td style="width: 15%;"><strong>Time</strong></td>
+                  <td style="width: 50%;"><strong>Session</strong></td>
+                  <td style="width: 25%;"><strong>Speakers</strong></td>
+                  <td style="width: 10%;"><strong>Recordings</strong></td>
                 </tr>
                 <!-- <tr style="border-bottom:1px solid black">
                   <td colspan="100%"></td>
@@ -543,9 +543,76 @@
 
       </div>
     </div>
-  </div>
+  </div> 
+
+  <!-- schedule -->
+  <div id="schedule" class="content-section-a">
+    <div class="container">
+      <div class="wow fadeInRightBig" data-animation-delay="200">
+        <h3 class="section-heading" style='text-align: justify;color:#164FC9'>Oral Session Schedule (June 17th, 2024)</h3>
+        <div id="controller2">
+          <div id='row fadeInRightBig'>
+            <div class="title">
+              <span v-for="(item,index) of country" :class="currentCountry == index ? 'titleItemSelect' : 'titleItem'"
+                @click="changeIndex(index)">
+                {{item}}
+              </span>
+            </div>
+            <div class="wow">
+              <table class="table" style="width:100%;">
+                <tr class="info">
+                  <td style="width: 15%;"><strong>Time</strong></td>
+                  <td style="width: 50%;"><strong>Title</strong></td>
+                  <td style="width: 25%;"><strong>Presenters</strong></td>
+                  <td style="width: 10%;"><strong>Recordings</strong></td>
+                </tr>
+                <tr class="success">
+                  <td>{{tableData[currentCountry][0]}}</td>
+                  <td><strong>DUSt3R: Geometric 3D Vision Made Easy</strong></td>
+                  <td><a href="https://europe.naverlabs.com/people_user_naverlabs/vincent-leroy/" target="blank"> Vincent Leroy, Naver Labs Europe</a></td>
+                  <td>-</td>
+                </tr>
+                <tr class="success">
+                  <td>{{tableData[currentCountry][1]}}</td>
+                  <td><strong>Genie: Generative Interactive Environments</strong></td>
+                  <td><a href="https://yugeten.github.io/" target="blank"> Yuge Shi , DeepMind London</a></td>
+                  <td>-</td>
+                </tr>
+                <tr class="success">
+                  <td>{{tableData[currentCountry][2]}}</td>
+                  <td><strong>SACReg: Scene-Agnostic Coordinate Regression for Visual Localization</strong></td>
+                  <td><a href="https://europe.naverlabs.com/people_user_naverlabs/j%C3%A9rome-revaud/" target="blank"> Jerome Revaud, Naver Labs Europe</a></td>
+                  <td>-</td>
+                </tr>
+                <tr class="success">
+                  <td>{{tableData[currentCountry][3]}}</td>
+                  <td><strong>PointOfView: A Multi-modal Network for Few-shot 3D Point Cloud Classification Fusing Point and Multi-view Image Features</strong></td>
+                  <td><a href="https://ecs.syr.edu/faculty/velipasalar/" target="blank"> Senem Velipasalar, Syracuse University</a></td>
+                  <td>-</td>
+                </tr>
+                <tr class="success">
+                  <td>{{tableData[currentCountry][4]}}</td>
+                  <td><strong>From 2D Portraits to 3D Realities: Advancing GAN Inversion for Enhanced Image Synthesis</strong></td>
+                  <td> Wonseok Oh, University of Michigan </a></td>
+                  <td>-</td>
+                </tr>
+                <tr style="border-bottom:2px solid black">
+                  <td colspan="100%"></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div> 
+
+
+
 
 <!-- 
+
   <div id="posters" class="content-section-b">
     <div class="container">
       <div class="row wow fadeInRightBig" data-animation-delay="200">
@@ -659,10 +726,10 @@
           <div class="authors">eslam mohamed abdelrahman (KAUST)*; Yasmeen Y Alsaedi (King Abdullah University of
             Science and Technology ); Mohamed Elhoseiny (King Abdullah University of Science and Technology)</div><a
             href="assets/posters/22.pdf"><i class="fas fa-file-pdf" style="color:red; font-size:24px;"></i></a>
+        </div> 
+
+
         </div>
-
-
-      </div>
     </div>
   </div>
 
@@ -765,12 +832,12 @@
 
 
 
-    <div id="sponsors" class="content-section-b">
+    <!-- <div id="sponsors" class="content-section-b">
       <div class="container">
         <div class="row wow fadeInRightBig" data-animation-delay="200">
           <h3 class="section-heading" style="text-align:justify;color:#164FC9">Sponsors</h3>
-          <!-- <h2 class="section-heading" style="text-align:center;color:#164FC9">They Trust Us</h3> -->
-          <!-- <div class="col-sm-3 wow fadeInRightBig" data-animation-delay="200"
+          <h2 class="section-heading" style="text-align:center;color:#164FC9">They Trust Us</h3> 
+          <div class="col-sm-3 wow fadeInRightBig" data-animation-delay="200"
             style="text-align:center;margin-left:30%">
             <center><img class="img-responsive" src="img/sponsors/luma_ai_logo.png" alt="" object-position="0 0">
             </center>
@@ -779,12 +846,12 @@
                 <center>Luma AI</center>
               </h4>
             </a>
-          </div> -->
+          </div> 
         </div>
       </div>
     </div>
   
-
+ -->
 
 
 
@@ -983,6 +1050,24 @@
           }
         })
       </script>
+      <script>
+        var app = new Vue({
+          el: '#controller2',
+          data: {
+            country: ['Pacific Standard Time'],
+            currentCountry: 0,
+            tableData: [
+              ['11:10 - 11:20', '11:20 - 11:30', '11:30 - 11:40', '11:40 - 11:50', '11:50 - 12:00'
+              ],
+            ]
+          },
+          methods: {
+            changeIndex(i) {
+              this.currentCountry = i
+            }
+          }
+        })
+      </script> 
       <!-- Smoothscroll -->
       <script type="text/javascript" src="js/jquery.corner.js"></script>
       <script src="js/wow.min.js"></script>
