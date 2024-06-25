@@ -234,7 +234,7 @@
   </nav>
 
 
-  <!-- <div id="scope" class="content-section-b" style="border-top: 0">
+  <div id="scope" class="content-section-b" style="border-top: 0">
     <div class="container">
 
       <div class="row">
@@ -245,29 +245,33 @@
 
         <div class="wow fadeInRightBig" data-animation-delay="200">
           <h3 class="section-heading" style="text-align:justify;color:#164FC9">
-            Event Pictures (from 3DMV2023) </h3>
+            Event Pictures</h3>
             <div id="image-container" class="image-container">
             </div>
         
           <script>
               const images = [
-              '062309d2-2710-4257-9cdc-9ef1074646ad.jpg', '13e993e4-a2f8-423f-97c4-d3497c29da48.jpg', '79935a91-5901-4c9f-a23a-0571a00f0a57(1).jpg', '79935a91-5901-4c9f-a23a-0571a00f0a57.jpg', '7c5b4373-5230-4c6c-bbdb-fef64f183804.jpg', '863f5184-6660-4a01-9476-652968b9c5c3.jpg', 'bd845362-fa8c-4325-ad32-66165c4032a5.jpg', 'ceef3074-abc6-4f52-9675-ce99247990c7.jpg', 'dbe9fae4-b23e-4d86-9568-7961fc2287af.jpg', 'f142a4e5-8aed-4f24-879c-2414122d363b.jpg', 'IMG_2087.jpg', 'IMG_2088.jpg', 'IMG_2089.jpg', 'IMG_2090.jpg', 'IMG_2097.jpg', 'IMG_2098.jpg', 'IMG_2100.jpg', 'IMG_2101.jpg', 'IMG_2104.jpg', 'IMG_2105.jpg', 'IMG_2110.jpg', 'IMG_2113.jpg', 'IMG_2114.jpg', 'IMG_2115.JPG', 'IMG_2921.jpg', 'IMG_2922.jpg', ];
+              'IMG_3573.jpg','PHOTO-2024-06-17-21-08-27.jpg', 'IMG_3574.jpg','PHOTO-2024-06-17-21-08-28(1).jpg', 'IMG_3575.jpg','PHOTO-2024-06-17-21-08-28(2).jpg', 'IMG_3576.jpg','PHOTO-2024-06-17-21-08-28.jpg', 'IMG_3577.jpg','PHOTO-2024-06-17-21-08-29(1).jpg', 'IMG_3578.jpg','PHOTO-2024-06-17-21-08-29.jpg', 'IMG_3579.jpg','PHOTO-2024-06-17-21-08-30.jpg', 'IMG_3580.jpg','PHOTO-2024-06-17-21-08-31.jpg', 'IMG_3581.jpg','PHOTO-2024-06-17-21-08-35(1).jpg', 'IMG_3582.jpg','PHOTO-2024-06-17-21-08-35(2).jpg', 'IMG_3583.jpg','PHOTO-2024-06-17-21-08-35(3).jpg', 'IMG_3584.jpg','PHOTO-2024-06-17-21-08-35.jpg', 'IMG_3586.jpg','PHOTO-2024-06-17-21-08-36(1).jpg', 'IMG_3587.jpg','PHOTO-2024-06-17-21-08-36(2).jpg', 'IMG_3588.jpg','PHOTO-2024-06-17-21-08-36(3).jpg', 'IMG_3589.jpg','PHOTO-2024-06-17-21-08-36(4).jpg', 'IMG_3591.jpg','PHOTO-2024-06-17-21-08-36(5).jpg', 'IMG_3592.jpg','PHOTO-2024-06-17-21-08-36(6).jpg', 'IMG_3598.jpg','PHOTO-2024-06-17-21-08-36.jpg', 'IMG_3599.jpg','PHOTO-2024-06-17-23-51-10(1).jpg', 'IMG_3600.jpg','PHOTO-2024-06-17-23-51-10(2).jpg', 'IMG_3601.jpg','PHOTO-2024-06-17-23-51-10.jpg', 'IMG_3602.jpg','PHOTO-2024-06-17-23-51-11(1).jpg', 'IMG_3603.jpg','PHOTO-2024-06-17-23-51-11.jpg', 'IMG_3605.jpg','PHOTO-2024-06-17-23-51-12(1).jpg', 'IMG_3606.jpg','PHOTO-2024-06-17-23-51-12.jpg', 'IMG_3609.jpg','PHOTO-2024-06-17-23-51-13(1).jpg', 'IMG_3610.jpg','PHOTO-2024-06-17-23-51-13.jpg', 'IMG_3613.jpg','PHOTO-2024-06-17-23-51-14.jpg','PHOTO-2024-06-17-21-08-26(1).jpg','PHOTO-2024-06-17-23-51-15.jpg','PHOTO-2024-06-17-21-08-26(2).jpg','PHOTO-2024-06-17-23-51-16.jpg','PHOTO-2024-06-17-21-08-26.jpg','PHOTO-2024-06-17-23-51-17.jpg' ];
                   
               const container = document.getElementById('image-container');
-      
+
               images.forEach(image => {
-                  const img = document.createElement('img');
-                  img.src = `img/event/${image}`;
-                  img.alt = image;
-                  container.appendChild(img);
+                const link = document.createElement('a');
+                link.href = `img/event/${image}`;
+                link.target = "_blank";
+                
+                const img = document.createElement('img');
+                img.src = `img/event/${image}`;
+                img.alt = image;
+                
+                link.appendChild(img);
+                container.appendChild(link);
               });
-          </script>
-      
+            </script>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  </div> -->
 
   <!-- Scope -->
   <div id="scope" class="content-section-a" style="border-top: 0">
